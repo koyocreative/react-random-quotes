@@ -1,0 +1,70 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	 transition: all 0.4s ease-in-out;
+}
+body {
+	font-size: 20px;
+	background: #fff;
+	background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+	font-family: 'Open Sans', 'Lato', 'Roboto', sans-serif;
+
+}
+.App {
+	background: #fff;
+	width: 400px;
+	padding: 40px;
+	border-radius: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	text-align: center;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	animation: slide .25s;
+}
+.single-quote {
+
+}
+.single-quote .quote {
+	font-style: italic;
+	font-weight: 400;
+	font-size: 30px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	animation: slide .25s;
+}
+.single-quote .author {
+	margin-bottom: 50px;
+	animation: slide .3s;
+}
+.single-quote button {
+	border: 1px solid salmon;
+	padding: 20px 35px;
+	border-radius: 15px;
+	font-size: 18px;
+	background: #fff;
+	color: salmon;
+	cursor: pointer;
+	outline: 0;
+	font-weight: bold;
+	animation: slide .35s;
+
+
+}
+.single-quote button:hover {
+	background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+	color: #fff;
+	outline: 0;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
